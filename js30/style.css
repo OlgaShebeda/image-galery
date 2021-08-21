@@ -11,31 +11,65 @@ body
 }
 .clock
 {
-    width:30rem;
-    height: 30rem;
+    width:25rem;
+    height: 25rem;
     margin: 50px auto;
     position: relative;
     padding: 2rem;
+    background: url(/js30/images/png/clock5.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     
-   
     border: 10px solid #091921;
-    border-radius: 50%;
+    border-radius: 25%;
    
 }
+
 .clock-face{
     position: relative;
     width: 100%;
     height: 100%;
     transform: rotateY(-3px);
 }
-.hand{
+.hand-hr{
     width: 50%;
-    height: 6px;
-    background: #091921;
+    height: 10px;
+    background: #920b0b;
     position: absolute;
     top: 50%;
+    border-radius: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
+    
+}
+
+.hand-mn{
+    width: 50%;
+    height: 5px;
+    background: #091921;
+    position: absolute;
+    top: 50%;
+    border-radius: 25%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    
+}
+
+.hand-sc{
+    width: 50%;
+    height: 3px;
+    background: #1a911a;
+    position: absolute;
+    top: 50%;
+    border-radius: 25%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    
+}
+.container{
+    font-size: 20px;
 }
 
