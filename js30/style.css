@@ -1,9 +1,12 @@
 
 body
 {
+    padding: 50px;
+    margin: 0px auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     min-height: 100vh;
     background:url("./images/img/unnamed.jpg");
     background-repeat: no-repeat;
@@ -71,10 +74,7 @@ body
 }
 .container{
     font-size: 24px;
-    margin: 0px auto;
-    padding-bottom: 350px;
-    padding-right: 150px;
-
+    
 }
 .time-clock{
     font-size: 50px;
@@ -82,4 +82,14 @@ body
 }
 .day, .year{
     font-size: 28px;
+}
+
+.night-but{
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.night-but:hover{
+    transform: scale(1.2);
 }

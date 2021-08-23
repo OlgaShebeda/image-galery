@@ -1,4 +1,6 @@
 //https://rolling-scopes-school.github.io/olgashebeda-JSFEPRESCHOOL/js30/
+
+
 const secondsHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hoursHand = document.querySelector('.hour-hand');
@@ -10,8 +12,10 @@ const day = document.querySelector(".day");
 const year = document.querySelector(".year");
 const week = document.querySelector(".week");
 
+  console.log("Первый этап. Повторить исходный проект - 10");
+  console.log("Второй этап. Обязательный дополнительный фукционал - 10");
+  console.log("Третий этап. Дополнительный фукционал на выбор - реализованно, но не работает");
  
-
 function setDate(){
  const date = new Date();
   const seconds = date.getSeconds();
@@ -28,11 +32,6 @@ function setDate(){
   //console.log(seconds);
 }
 setInterval(setDate, 1000);
-
-var months = ["студзеня,", "лютага,", "сакавіка,", "красавіка,", 
-"мая,", "чэрвня,", "ліпня,", "жнiўня,", "верасня,", "кастрычнiка,", "лiстапада,", "снежня,"];
-var weeks = ['нядзеля', 'панядзелак','аўторак','серада','чацвер','пятніца','субота'];
-
 
 function startTime(){
   const today = new Date;
@@ -51,8 +50,26 @@ function startTime(){
   //console.log(sc);
 }
 setInterval(startTime, 1000);
+var months = ["студзеня,", "лютага,", "сакавіка,", "красавіка,", 
+"мая,", "чэрвня,", "ліпня,", "жнiўня,", "верасня,", "кастрычнiка,", "лiстапада,", "снежня,"];
+var weeks = ['нядзеля', 'панядзелак','аўторак','серада','чацвер','пятніца','субота'];
+
 const date = new Date;
   month.innerHTML = months[date.getMonth()];
   
   week.innerHTML = weeks[date.getDay()];
   year.innerHTML = date.getFullYear();
+
+  const nightMode = document.querySelector('.night-but');
+  const mode = false;
+ 
+  nightMode.addEventListener('click',function(){
+    if (mode == false){
+      mode=true;
+      document.querySelector('body').style.background = "url ('./images/img/spokojstvie.jpg')";
+    }else{
+      mode=false;
+      document.querySelector('body').style.background = "url ('./images/img/unnamed.jpg')";
+    }
+  });
+  
