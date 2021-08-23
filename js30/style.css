@@ -5,7 +5,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(/js30/images/img/unnamed.jpg);
+    background:url("./images/img/unnamed.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -16,7 +16,7 @@ body
     margin: 50px auto;
     position: relative;
     padding: 2rem;
-    background: url(/js30/images/png/clock5.png);
+    background: url("./images/png/clock5.png");
     background-repeat: no-repeat;
     background-size: 100%;
     
@@ -70,6 +70,16 @@ body
     
 }
 .container{
-    font-size: 20px;
-}
+    font-size: 24px;
+    margin: 0px auto;
+    padding-bottom: 350px;
+    padding-right: 150px;
 
+}
+.time-clock{
+    font-size: 50px;
+    
+}
+.day, .year{
+    font-size: 28px;
+}

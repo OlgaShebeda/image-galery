@@ -29,9 +29,9 @@ function setDate(){
 }
 setInterval(setDate, 1000);
 
-var months = ["Студзень", "Люты", "Сакавік", "Красавік", 
-"Май", "Чэрвень", "Ліпень", "Жнiвень", "Верасень", "Кастрычнiк", "Лiстапад", "Снежань"];
-var weeks = ['Нядзеля', 'Панядзелак','Аўторак','Серада','Чацвер','Пятніца','Субота'];
+var months = ["студзеня,", "лютага,", "сакавіка,", "красавіка,", 
+"мая,", "чэрвня,", "ліпня,", "жнiўня,", "верасня,", "кастрычнiка,", "лiстапада,", "снежня,"];
+var weeks = ['нядзеля', 'панядзелак','аўторак','серада','чацвер','пятніца','субота'];
 
 
 function startTime(){
@@ -39,6 +39,7 @@ function startTime(){
   const hr = today.getHours();
   const mn = today.getMinutes();
   const sc = today.getSeconds();
+  day.innerHTML = today.getDate();
   var time = [today.getHours(),today.getMinutes(),today.getSeconds()]; 
   if(time[0] < 10){time[0] = "0"+ time[0];}
   if(time[1] < 10){time[1] = "0"+ time[1];}
@@ -47,11 +48,11 @@ function startTime(){
   var current_time = [time[0],time[1],time[2]].join(':');
   getTime.innerHTML = current_time;
   
-  console.log(sc);
+  //console.log(sc);
 }
 setInterval(startTime, 1000);
 const date = new Date;
   month.innerHTML = months[date.getMonth()];
-  day.innerHTML = date.getDate();
+  
   week.innerHTML = weeks[date.getDay()];
   year.innerHTML = date.getFullYear();
