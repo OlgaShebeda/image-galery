@@ -60,16 +60,16 @@ const date = new Date;
   week.innerHTML = weeks[date.getDay()];
   year.innerHTML = date.getFullYear();
 
-  const nightMode = document.querySelector('.night-but');
-  const mode = false;
+  var nightMode = document.querySelector('.night-but');
+  var mode = false;
  
   nightMode.addEventListener('click',function(){
     if (mode == false){
       mode=true;
-      document.querySelector('body').style.background = "url ('./images/img/spokojstvie.jpg')";
+      document.querySelector('body').style.background = '#e66f2a';
     }else{
       mode=false;
-      document.querySelector('body').style.background = "url ('./images/img/unnamed.jpg')";
+      document.querySelector('body').style.background = '#091921';
     }
   });
   

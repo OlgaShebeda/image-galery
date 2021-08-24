@@ -50,7 +50,7 @@ body
 .hand-mn{
     width: 50%;
     height: 5px;
-    background: #091921;
+    background: #000;
     position: absolute;
     top: 50%;
     border-radius: 25%;
