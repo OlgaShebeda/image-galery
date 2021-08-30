@@ -1,0 +1,95 @@
+img {
+    max-width: 100%;
+    display: block;
+  }
+  div , span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /* Убираем внешние отступы */
+  body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+  }
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *,*::before, *::after{
+    box-sizing: inherit;
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background:  #c3e7e1;
+}
+.container:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+.video-player{
+    width: 100%;
+   
+}
+.video-bar{
+    width: 100%;
+    min-height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+  }
+  .progress-bar{
+    width: 840px;
+    height: 15px;
+
+  }
+  .progress-bar-volume{
+    width: 155px;
+    height: 15px;
+  }
+  .video-buttom{
+    border: none;
+    background:none;
+    cursor: pointer;
+  }
+  .player__button {
+    background: none;
+    border: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    max-width: 50px;
+  }
+  
+  .player__button:focus {
+    border-color: #ffc600;
+  }
+  .video-zoom-buttom{
+    border: none;
+    background:none;
+    cursor: pointer;
+  }
+  input[type=range] {
+    
+    background: transparent;
+    width: 100%;
+    margin: 0 5px;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  
