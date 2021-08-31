@@ -35,6 +35,9 @@ img {
   max-width: none;
   width: 100%;
 }
+.player{
+  width: 100%;
+}
 .video-player{
     width: 100%;
    
@@ -84,7 +87,7 @@ img {
   input[type=range] {
     
     background: transparent;
-    width: 100%;
+   
     margin: 0 5px;
   }
   
