@@ -35,3 +35,148 @@
          url('../fonts/merriweather-v28-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/merriweather-v28-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
   }
+
+  
+  /* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div , span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Убираем внешние отступы */
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  *,*::before, *::after{
+    box-sizing: inherit;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+  }
+
+  body{
+       background-color: #000;
+  }
+
+  .container {
+     max-width: 1440px;
+     width: 100vw;
+     margin: 0 auto;
+     padding: 0 20px;
+   }
+
+   /* header*/
+   .header{
+     width: 100%;
+     height: 90px;
+   }
+
+   .header-container{
+        background: url('./assets/img/bg-1sec.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+   }
+
+   .logo-style{
+     margin: 20px;
+     width: 50px;
+     height: 50px;
+    
+     transition: all 0.2s linear;
+   }
+
+   .logo-style:hover{
+     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+     contrast(87%);
+   }
+
+   .nav-list{
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-self: flex-end;
+     margin-left: 700vw;
+   }
+
+    .nav-item{
+     margin-right: 30px;
+   }
+   .nav-item:last-child{
+     margin-right: 0px;
+   }
+   .nav-link{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 50px;
+     color: #FFFFFF;
+     
+     position: relative;
+ 
+     transition: color 0.2s linear;
+   }
+ 
+   .nav-link:hover{
+     color:  #BDAE82;;
+   }
+
+.language{
+     width: 70px;
+     height: 50px;
+}
+
+.text-language{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 50px;
+     
+     text-align: center;
+
+     color: #FFFFFF;
+}
+
+.text-language.active{
+     color:  #BDAE82;
+}
+
+.text{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 50px;
+     
+     text-align: center;
+     margin:0 8px;
+
+     color: #FFFFFF;
+}
