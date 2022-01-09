@@ -115,21 +115,24 @@ li{
      contrast(87%);
    }
 
+   .nav{
+     margin-left: auto;
+
+   }
+
    .nav-list{
      
      display: flex;
      flex-direction: row;
      justify-content: space-between;
      align-self: flex-end;
-     margin-left: 700vw;
+     
    }
 
     .nav-item{
      margin-right: 30px;
    }
-   .nav-item:last-child{
-     margin-right: 0px;
-   }
+   
    .nav-link{
      font-family: Inter;
      font-style: normal;
@@ -176,7 +179,7 @@ li{
      line-height: 50px;
      
      text-align: center;
-     margin:0 8px;
+     margin:0 4px;
 
      color: #FFFFFF;
 }
