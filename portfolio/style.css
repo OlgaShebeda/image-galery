@@ -87,6 +87,54 @@ li{
      padding: 0 20px;
    }
 
+   .title{
+    
+    width: 700px;
+    
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    bottom: 20px;
+    color: #BDAE82;   
+    margin: 0 auto;
+    overflow: hidden; 
+   }
+
+   .section-title{
+    
+    display: inline-block;
+    vertical-align: middle;
+   }
+
+   .title::after{
+     content: "";
+     position: relative;
+     display: inline-block;
+     vertical-align: middle;
+     width: 50%;
+     height: 2px;
+     background-color:  #BDAE82;
+     margin-right: -100%;
+     right: -20px;
+     
+   }
+
+   .title::before{
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 2px;
+    background-color:  #BDAE82;
+    margin-left: -100%;
+    left: -20px;
+   
+  }
+
    /* header*/
    .header{
      width: 100%;
@@ -242,4 +290,9 @@ li{
      color: #FFFFFF;
 }
 
-/*and hero section*/
+/*end hero section*/
+
+/*start skills section*/
+
+
+/* end skills section*/
