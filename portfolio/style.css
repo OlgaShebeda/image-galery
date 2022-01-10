@@ -101,6 +101,8 @@ li{
     color: #BDAE82;   
     margin: 0 auto;
     overflow: hidden; 
+    margin-top: 100px;
+    margin-bottom: 60px;
    }
 
    .section-title{
@@ -293,6 +295,67 @@ li{
 /*end hero section*/
 
 /*start skills section*/
+.skills-items {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.item-card {
+  width: 320px;
+  height: 100%;
+  background-position: center top;
+  padding: 0 20px;
+}
+
+.item-card:nth-child(1) {
+  background-image: url('./assets/svg/camera.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+.item-card:nth-child(2) {
+  background-image: url('./assets/svg/video.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+.item-card:nth-child(3) {
+  background-image: url('./assets/svg/image.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+.item-card:nth-child(4) {
+  background-image: url('./assets/svg/mic.svg');
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
+}
+
+.title-skill-card{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin-top: 100px;
+}
+
+.text-skill-card{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin-top: 20px;
+}
 
 /* end skills section*/
