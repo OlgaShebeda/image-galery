@@ -420,3 +420,31 @@ li{
   height: 560px;
 }
 /* end portfolio section*/
+
+/*start video section*/
+.video-section{
+  width: 100%;
+  max-height: 945px;
+}
+
+.video{
+  width: 1400px;
+  height: 705px;
+  background-image: url('./assets/img/video-player.jpg');
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button{
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  border: 0;
+  background-color: transparent;
+  background-image: url('./assets/svg/Play_hover.svg');
+}
+
+/*end video section*/
