@@ -359,3 +359,64 @@ li{
 }
 
 /* end skills section*/
+
+/*start portfolio section*/
+.portfolio-section{
+  width: 100%;
+  max-height: 1500px;
+}
+
+.buttons-items{
+  width: 895px;
+  height: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.button-black{
+  width: 220px;
+  background-color: transparent;
+
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #BDAE82;
+  transition: 0.2s;
+}
+
+.button-black:hover{
+  color: #FFFFFF;
+}
+
+.button-black.active{
+  background-color: #BDAE82;
+  color: #000;
+}
+
+.images-items{
+  
+  width: 100%;
+  height: 1145px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  column-count: 3;
+  margin-top: 60px;
+}
+
+.card-img{
+  max-width: calc(100% / 3 - 20px);
+  height: 560px;
+}
+/* end portfolio section*/
