@@ -145,6 +145,7 @@ li{
    }
 
    .header-container{
+
         height: 100%;
         background: url('./assets/img/bg-1sec.jpg');
         background-repeat: no-repeat;
@@ -453,7 +454,7 @@ li{
 /*start price section*/
 .price-section{
   width: 100%;
-  height: 845px;
+  max-height: 845px;
   padding-bottom: 100px;
 }
 
@@ -522,3 +523,64 @@ li{
 }
 
 /*end price section*/
+
+/* start contact section*/
+
+.contact-section{
+  width: 100%;
+  height: 700px;
+  background-image: url('./assets/img/bg-contacts.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inf-contact-container{
+  width: 450px;
+  height: 445px;
+  margin-top: 60px;
+  
+}
+
+.title-contat-section{
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #BDAE82;
+  margin-bottom: 40px;
+}
+
+.emaill-input{
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.textarea-box{
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+
+/*end contact section*/
