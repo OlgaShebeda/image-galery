@@ -445,6 +445,80 @@ li{
   border: 0;
   background-color: transparent;
   background-image: url('./assets/svg/Play_hover.svg');
+  transition: 0.2s;
 }
 
 /*end video section*/
+
+/*start price section*/
+.price-section{
+  width: 100%;
+  height: 845px;
+  padding-bottom: 100px;
+}
+
+.price-cards{
+  width: 1400px;
+  height: 505px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+.price-card{
+  width: 445px;
+  height: 505px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  border: 3px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding: 40px;
+}
+
+.title-card-price{
+  width: 360px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+  
+}
+
+.price{
+  
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  display: block;
+  color: #BDAE82;
+  margin: 20px 0;
+}
+
+.text-price{
+  width: 360px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  display: block;
+  color: #FFFFFF;
+  
+}
+
+.text-price:nth-child(7){
+  margin-bottom: 40px;
+}
+
+/*end price section*/
