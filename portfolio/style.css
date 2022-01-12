@@ -155,15 +155,17 @@ li{
         justify-content: space-between;
    }
 
-   .logo-style{
+   .logo{
      margin: 20px;
      width: 50px;
      height: 50px;
-    
+     background-image: url('./assets/svg/logo.svg');
+     background-size: contain;
+     background-repeat: no-repeat;
      transition: all 0.2s linear;
    }
 
-   .logo-style:hover{
+   .logo:hover{
      filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
      contrast(87%);
    }
@@ -628,30 +630,39 @@ li{
 .icon-item{
   width: 32px;
   height: 32px;
-
+  transition: 0.2s;
 }
 
 .icon-item:nth-child(1){
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("./assets/svg/inst.svg");
 }
 
 .icon-item:nth-child(2){
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("./assets/svg/fb.svg");
 }
 
 .icon-item:nth-child(3){
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("./assets/svg/tw.svg");
 }
 
 .icon-item:nth-child(4){
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url("./assets/svg/pinterest.svg");
+}
+
+.icon-item:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 /*end footer*/
