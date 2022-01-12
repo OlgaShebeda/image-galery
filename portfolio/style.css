@@ -81,15 +81,16 @@ li{
   }
 
   .container {
-     max-width: 1440px;
-     width: 100%;
+    
+     width: calc(100% - 40px);
+     
      margin: 0 auto;
-     padding: 0 20px;
+    
    }
 
    .title{
     
-    width: 700px;
+    width: 50%;
     
     font-family: Merriweather;
     font-style: normal;
@@ -174,7 +175,7 @@ li{
      margin-top: 20px;
      margin-bottom: 20px;   
      margin-left: auto;
-
+    display: block;
    }
 
    .nav-list{
@@ -687,3 +688,37 @@ li{
     contrast(87%);
 }
 /*end footer*/
+
+
+/* 768 px */
+
+@media (max-width: 768px) {
+  .title{
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .container{
+    width: calc(100% - 120px);
+  }
+
+  /* header */
+.header{
+  background-position: -15px 0;
+  background-size: auto 620px;
+}
+
+  /* hero */ 
+  #hero{
+    height: 590px;
+    background-position: -15px -90px;
+    background-size: auto 620px;
+  }
+
+  .nav{
+    display: none;
+  }
+
+}
