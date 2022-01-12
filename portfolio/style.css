@@ -142,14 +142,15 @@ li{
      width: 100%;
      max-height: 90px;
      height: 100%;
+     background: url('./assets/img/bg-1sec.jpg');
+      background-repeat: no-repeat;
+      background-position: center 0;
    }
 
    .header-container{
 
         height: 100%;
-        background: url('./assets/img/bg-1sec.jpg');
-        background-repeat: no-repeat;
-        background-position: center 0;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -245,7 +246,7 @@ li{
 #hero{
      width: 100%;
      max-height: 820px;
-     height: 820px;
+     height: 100%;
      background-image: url('./assets/img/bg-1sec.jpg');
      background-position: center -90px;
      background-repeat: no-repeat;
@@ -449,6 +450,11 @@ li{
   background-color: transparent;
   background-image: url('./assets/svg/Play_hover.svg');
   transition: 0.2s;
+}
+
+.play-button:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 /*end video section*/
