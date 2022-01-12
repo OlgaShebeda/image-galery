@@ -451,6 +451,11 @@ li{
   transition: 0.2s;
 }
 
+.play-button:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 /*end video section*/
 
 /*start price section*/
