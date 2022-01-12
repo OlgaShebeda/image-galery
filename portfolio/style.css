@@ -584,3 +584,74 @@ li{
 }
 
 /*end contact section*/
+
+/* start footer */
+.footer{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-dev{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  column-gap: 20px;
+  max-width: 190px;
+  width: 100%;
+  height: 50px;
+}
+
+.text-footer{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    column-gap: 20px;
+    max-width: 190px;
+    width: 100%;
+    height: 50px;
+}
+
+.icon-item{
+  width: 32px;
+  height: 32px;
+
+}
+
+.icon-item:nth-child(1){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/svg/inst.svg");
+}
+
+.icon-item:nth-child(2){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/svg/fb.svg");
+}
+
+.icon-item:nth-child(3){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/svg/tw.svg");
+}
+
+.icon-item:nth-child(4){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/svg/pinterest.svg");
+}
+/*end footer*/
