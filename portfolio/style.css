@@ -59,9 +59,15 @@ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquot
   margin: 0;
 }
 
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
   }
 
   *,*::before, *::after{
@@ -77,19 +83,20 @@ li{
   }
 
   body{
-       background-color: #000;
+    background-color: #000;
+       
   }
 
   .container {
-     max-width: 1440px;
-     width: 100%;
+    
+     width: calc(100% - 40px);
      margin: 0 auto;
-     padding: 0 20px;
+    
    }
 
    .title{
     
-    width: 700px;
+    width: 50%;
     
     font-family: Merriweather;
     font-style: normal;
@@ -174,11 +181,11 @@ li{
      margin-top: 20px;
      margin-bottom: 20px;   
      margin-left: auto;
-
+     display: flex;
+     
    }
 
    .nav-list{
-     
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -241,11 +248,31 @@ li{
      color: #FFFFFF;
 }
 
+.nav-burger{
+  width: 50px;
+  height: 50px;
+  padding-top: 11px;
+  cursor: pointer;
+  top: 20px;
+  right: 64px;
+  display: none;
+  z-index: 100;
+}
+
+.line-nav1, .line-nav2, .line-nav3{
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+
 /*start hero section*/
 #hero{
      width: 100%;
-     max-height: 820px;
      height: 820px;
+     
      background-image: url('./assets/img/bg-1sec.jpg');
      background-position: center -90px;
      background-repeat: no-repeat;
@@ -300,41 +327,40 @@ li{
 /*start skills section*/
 .skills-items {
   width: 100%;
-  height: 240px;
+  min-height: 240px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
+  gap: 40px;
 }
 
 .item-card {
   width: 320px;
   height: 100%;
   background-position: center top;
+  background-size: 62px 50px;
+  background-repeat: no-repeat;
   padding: 0 20px;
 }
 
 .item-card:nth-child(1) {
   background-image: url('./assets/svg/camera.svg');
-  background-size: 62px 50px;
-  background-repeat: no-repeat;
+ 
 }
 
 .item-card:nth-child(2) {
   background-image: url('./assets/svg/video.svg');
-  background-size: 62px 50px;
-  background-repeat: no-repeat;
+  
 }
 
 .item-card:nth-child(3) {
   background-image: url('./assets/svg/image.svg');
-  background-size: 62px 50px;
-  background-repeat: no-repeat;
+  
 }
 
 .item-card:nth-child(4) {
   background-image: url('./assets/svg/mic.svg');
-  background-size: 62px 50px;
-  background-repeat: no-repeat;
+  
 }
 
 .title-skill-card{
@@ -366,12 +392,12 @@ li{
 /*start portfolio section*/
 .portfolio-section{
   width: 100%;
-  max-height: 1500px;
+  mшт-height: 1500px;
 }
 
 .buttons-items{
-  width: 895px;
-  height: 56px;
+  max-width: 895px;
+  min-height: 56px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -415,32 +441,34 @@ li{
 .images-items{
   
   width: 100%;
-  height: 1145px;
+  min-height: 1145px;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  column-count: 3;
+  
+  justify-content: space-around;
   margin-top: 60px;
 }
 
 .card-img{
-  max-width: calc(100% / 3 - 20px);
+  max-width: 450px;
   height: 560px;
+  margin-bottom: 25px;
 }
 /* end portfolio section*/
 
 /*start video section*/
 .video-section{
+  max-width: 1400px;
   width: 100%;
   max-height: 945px;
 }
 
 .video{
-
   max-width: 1400px;
   height: 705px;
   background-image: url('./assets/img/video-player.jpg');
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
@@ -455,6 +483,8 @@ li{
   border: 0;
   background-color: transparent;
   background-image: url('./assets/svg/Play_hover.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   transition: 0.2s;
 }
 
@@ -468,22 +498,22 @@ li{
 /*start price section*/
 .price-section{
   width: 100%;
-  max-height: 845px;
-  padding-bottom: 100px;
+  min-height: 845px;
+  padding-bottom: 75px;
 }
 
 .price-cards{
   max-width: 1400px;
   width: 100%;
-  height: 505px;
+  min-height: 505px;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  justify-content: space-between;
+
 }
 
 .price-card{
-  max-width: 32%;
-  width: calc(100% / 3 - 16px);
+  max-width: 450px;
   height: 505px;
   display: flex;
   flex-wrap: wrap;
@@ -493,6 +523,7 @@ li{
   box-sizing: border-box;
   border-radius: 0px;
   padding: 40px;
+  margin-bottom: 25px;
 }
 
 .title-card-price{
@@ -549,7 +580,7 @@ li{
 }
 
 .contact-section{
-  max-width: 1440px;
+  max-width: 1400px;
   width: 100%;
   height: 700px;
   
@@ -562,6 +593,7 @@ li{
   width: 450px;
   height: 445px;
   margin-top: 60px;
+  display: block;
   
 }
 
@@ -620,9 +652,9 @@ li{
 .info-dev{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
   max-width: 190px;
   width: 100%;
   height: 50px;
@@ -635,6 +667,7 @@ li{
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
+  padding:0 10px;
 }
 
 .social{
@@ -687,3 +720,209 @@ li{
     contrast(87%);
 }
 /*end footer*/
+
+
+/* 768 px */
+
+@media (max-width: 768px) {
+ 
+
+  .title{
+    width: calc(50% + 40px);
+    height: 80px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  /* header */ 
+
+.header{
+  background-position: -15px 0;
+  background-size: auto 620px;
+  padding-left: 40px;
+  padding-right: 44px;
+  overflow-x: hidden; 
+} 
+
+.language{
+  margin-left: auto;
+  width: 85px;
+  margin-right: 20px;
+}
+
+.text{
+  margin: 0 9px;
+}
+
+.nav-burger{
+  display: block;
+  overflow-x: hidden; 
+}
+
+.nav-list{
+  max-width: 620px;
+  width: 100%;
+  max-height: 1024px; 
+  height: 100%;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  transition:transform 0.3s ease-in;  
+  transform:translate(100%);  
+  overflow-x: hidden; 
+}
+
+.nav-item{
+  margin-left: 127px;
+  overflow-x: hidden; 
+}
+
+.change .line-nav1{
+  transform: rotate(45deg) translate(11px,10px);
+}
+
+.change .line-nav2{
+  opacity: 0;
+}
+
+.change .line-nav3{
+  transform: rotate(-45deg) translate(8px,-7px);
+}
+
+.nav-change{  
+  transform:translate(0%);  
+ }  
+
+  /* hero */ 
+  #hero{
+    height: 500px;
+    background-position: -15px -90px;
+    background-size: auto 620px;
+    padding-top: 78px;
+    padding-left: 40px;
+  }
+
+  .section-title-main{
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  .text-inf{
+    width: 390px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 24px;
+  }
+
+  /* skills */
+  .skills-items{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .item-card{
+    width: 300px;
+    padding: 0 10px;
+  }
+
+  .text-skill-card{
+    line-height: 22px;
+  }
+
+  /* portfolio */
+.portfolio-section{
+  max-height: 3870px;
+}
+
+  .buttons-items{
+    max-width: 445px;
+  }
+
+  .images-items{
+    margin-top: 56px;
+    justify-content: center;
+  }
+
+  /* video */
+  .video-section{
+    
+    max-height: 628px;
+    
+  }
+  .video{
+    background-size: auto 418px;
+    height: 418px;
+    margin: 0 -20px;
+  }
+
+  .play-button{
+    width: 75px;
+    height: 75px;
+    background-image: url('./assets/svg/Play_hover-small.svg');
+  }
+
+  /* price */
+  .price-section{
+    padding-bottom: 30px;
+  }
+
+  .price-cards{
+    justify-content: center;
+  }
+
+  .price-card{
+    max-width: 420px;
+    margin-bottom: 50px;
+  }
+
+  /* contacts */
+  .contacts{
+    background-size: auto 600px;
+  }
+
+  .contact-section{
+    height: 600px;
+    justify-content: center;
+  }
+
+  .inf-contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .title-contat-section{
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  /* footer */
+  .footer{
+    height: 190px;
+    width: 235px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .info-dev{
+    height: 25px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+  }
+
+  .text-footer{
+    font-size: 20px;
+    line-height: 24px;
+  }
+ 
+  .social{
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  
+}
