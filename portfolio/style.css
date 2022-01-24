@@ -62,7 +62,7 @@ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquot
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+
   }
 
   *,*::before, *::after{
@@ -79,12 +79,13 @@ li{
 
   body{
     background-color: #000;
-       
+    overflow: hidden;
   }
 
   .container {
-    
-     width: calc(100% - 40px);
+    max-width: 1440px;
+    padding: 0 20px ;
+     width: 100%;
      margin: 0 auto;
     
    }
@@ -387,7 +388,7 @@ li{
 /*start portfolio section*/
 .portfolio-section{
   width: 100%;
-  mшт-height: 1500px;
+  min-height: 1500px;
 }
 
 .buttons-items{
