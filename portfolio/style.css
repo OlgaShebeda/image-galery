@@ -59,9 +59,15 @@ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquot
   margin: 0;
 }
 
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
   }
 
   *,*::before, *::after{
@@ -77,13 +83,13 @@ li{
   }
 
   body{
-       background-color: #000;
+    background-color: #000;
+       
   }
 
   .container {
     
      width: calc(100% - 40px);
-     
      margin: 0 auto;
     
    }
@@ -175,11 +181,11 @@ li{
      margin-top: 20px;
      margin-bottom: 20px;   
      margin-left: auto;
-    display: block;
+     display: flex;
+     
    }
 
    .nav-list{
-     
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -240,6 +246,26 @@ li{
      margin:0 4px;
 
      color: #FFFFFF;
+}
+
+.nav-burger{
+  width: 50px;
+  height: 50px;
+  padding-top: 11px;
+  cursor: pointer;
+  top: 20px;
+  right: 64px;
+  display: none;
+  z-index: 100;
+}
+
+.line-nav1, .line-nav2, .line-nav3{
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #FFFFFF;
+  transition: 0.3s;
 }
 
 /*start hero section*/
@@ -699,6 +725,8 @@ li{
 /* 768 px */
 
 @media (max-width: 768px) {
+ 
+
   .title{
     width: calc(50% + 40px);
     height: 80px;
@@ -708,17 +736,67 @@ li{
     margin-bottom: 50px;
   }
 
-  /* header */
+  /* header */ 
+
 .header{
   background-position: -15px 0;
   background-size: auto 620px;
   padding-left: 40px;
   padding-right: 44px;
+  overflow-x: hidden; 
 } 
 
-.nav{
-    display: none;
-  }
+.language{
+  margin-left: auto;
+  width: 85px;
+  margin-right: 20px;
+}
+
+.text{
+  margin: 0 9px;
+}
+
+.nav-burger{
+  display: block;
+  overflow-x: hidden; 
+}
+
+.nav-list{
+  max-width: 620px;
+  width: 100%;
+  max-height: 1024px; 
+  height: 100%;
+  right: 0px;
+  position: absolute;
+  top: 0px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  transition:transform 0.3s ease-in;  
+  transform:translate(100%);  
+  overflow-x: hidden; 
+}
+
+.nav-item{
+  margin-left: 127px;
+  overflow-x: hidden; 
+}
+
+.change .line-nav1{
+  transform: rotate(45deg) translate(11px,10px);
+}
+
+.change .line-nav2{
+  opacity: 0;
+}
+
+.change .line-nav3{
+  transform: rotate(-45deg) translate(8px,-7px);
+}
+
+.nav-change{  
+  transform:translate(0%);  
+ }  
 
   /* hero */ 
   #hero{
