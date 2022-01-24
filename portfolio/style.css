@@ -291,7 +291,7 @@ li{
 .text-inf{
      max-width: 470px;
      width: 100%;
-     height: 120px;
+     min-height: 120px;
      font-family: Inter;
      font-style: normal;
      font-weight: normal;
@@ -747,7 +747,7 @@ li{
   background-position: -15px 0;
   background-size: auto 620px;
   padding-left: 40px;
-  padding-right: 44px;
+  padding-right: 40px;
    
 } 
 
@@ -758,7 +758,7 @@ li{
 }
 
 .text{
-  margin: 0 9px;
+  margin: 0 8px;
 }
 
 .nav-block{
@@ -835,7 +835,7 @@ li{
   }
 
   .text-inf{
-    width: 390px;
+    
     margin-top: 20px;
     margin-bottom: 60px;
     line-height: 24px;
@@ -848,7 +848,7 @@ li{
   }
 
   .item-card{
-    width: 300px;
+    
     padding: 0 10px;
   }
 
@@ -898,7 +898,7 @@ li{
   }
 
   .price-card{
-    max-width: 420px;
+    padding: 20px;
     margin-bottom: 50px;
   }
 
