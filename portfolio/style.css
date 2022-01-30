@@ -423,6 +423,7 @@ li{
 
   color: #BDAE82;
   transition: 0.2s;
+  z-index: 1;
 }
 
 .button-black:hover{
@@ -755,6 +756,7 @@ li{
   margin-left: auto;
   width: 85px;
   margin-right: 20px;
+  z-index: 1;
 }
 
 .text{
@@ -769,14 +771,14 @@ li{
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 
 }
 
 .nav-burger{
   display: block;
-   
+   z-index: 1;
 }
 
 .nav-list{
@@ -863,6 +865,7 @@ li{
 
   .buttons-items{
     max-width: 445px;
+    
   }
 
   .images-items{
