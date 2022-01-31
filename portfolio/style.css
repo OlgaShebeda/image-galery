@@ -470,6 +470,7 @@ li{
 
 .button-black:hover{
   color: var(--text-color);
+  background-color: #bdae82;
 }
 
 .button-black.active{
