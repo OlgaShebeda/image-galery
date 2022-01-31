@@ -65,6 +65,12 @@ html{
 
   }
 
+  :root {
+    --body-color: #000;
+    --text-color: #fff;
+    --hover-color: #BDAE82;
+  }
+
   *,*::before, *::after{
     box-sizing: inherit;
   }
@@ -78,7 +84,7 @@ li{
   }
 
   body{
-    background-color: #000;
+     background-color: #000;
     overflow-x: hidden;
   }
 
@@ -87,6 +93,11 @@ li{
     padding: 0 20px ;
      width: 100%;
      margin: 0 auto;
+    
+   }
+
+   .light-style{
+     background-color: var(--body-color);
    }
 
    .title{
@@ -100,7 +111,7 @@ li{
     line-height: 80px;
     text-align: center;
     bottom: 20px;
-    color: #BDAE82;   
+    color: var(--hover-color);   
     margin: 0 auto;
     overflow: hidden; 
     margin-top: 100px;
@@ -120,7 +131,7 @@ li{
      vertical-align: middle;
      width: 50%;
      height: 2px;
-     background-color:  #BDAE82;
+     background-color:  var(--hover-color);
      margin-right: -100%;
      right: -20px;
      
@@ -133,7 +144,7 @@ li{
     vertical-align: middle;
     width: 50%;
     height: 2px;
-    background-color:  #BDAE82;
+    background-color:  var(--hover-color);
     margin-left: -100%;
     left: -20px;
    
@@ -197,7 +208,7 @@ li{
      font-size: 20px;
      line-height: 50px;
      color: #FFFFFF;
-     
+     cursor: pointer;
      position: relative;
  
      transition: color 0.2s linear;
@@ -210,6 +221,7 @@ li{
 .language{
      width: 70px;
      height: 50px;
+     margin-right: 20px;
 }
 
 .text-language{
@@ -222,6 +234,7 @@ li{
      text-align: center;
      cursor: pointer;
      color: #FFFFFF;
+     
 }
 
 .text-language.active{
@@ -239,6 +252,35 @@ li{
      margin:0 4px;
 
      color: #FFFFFF;
+}
+
+.sun-btn{
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.sun-btn:hover{
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+     contrast(87%);
+}
+
+.light-icon{
+  background-image: url('./assets/svg/moon.svg');
+  
+  
+}
+
+.darck-icon{
+  background-image: url('./assets/svg/sun.svg');
+  
 }
 
 .nav-burger{
@@ -372,7 +414,7 @@ li{
   line-height: 40px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--text-color);
   margin-top: 100px;
 }
 
@@ -384,7 +426,7 @@ li{
   line-height: 36px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--text-color);
   margin-top: 20px;
 }
 
@@ -421,19 +463,19 @@ li{
   line-height: 40px;
   text-align: center;
 
-  color: #BDAE82;
-  transition: 0.2s;
+  color: var(--hover-color);
+  transition: 0.3s;
   z-index: 1;
 }
 
 .button-black:hover{
-  color: #FFFFFF;
+  color: var(--text-color);
 }
 
 .button-black.active{
   background-color: #BDAE82;
   color: #000;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .button-black.active:hover{
@@ -540,7 +582,7 @@ li{
   line-height: 56px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: var(--text-color);
   
 }
 
@@ -566,7 +608,7 @@ li{
   line-height: 36px;
   text-align: center;
   display: block;
-  color: #FFFFFF;
+  color: var(--text-color);
   
 }
 

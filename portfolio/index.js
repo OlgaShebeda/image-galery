@@ -183,3 +183,27 @@ engRu.forEach((item,ind) => {
     
   });
 })
+
+
+
+// light/darck style
+
+const sunBtn = document.querySelector('.sun-btn')
+
+function lightDarckStyle (){
+  if(sunBtn.classList.contains('light-icon')){
+    sunBtn.classList.remove('light-icon');
+    sunBtn.classList.add('darck-icon');
+    document.documentElement.style.setProperty('--body-color', '#000');
+    document.documentElement.style.setProperty('--text-color', '#fff');
+    document.documentElement.style.setProperty('--hover-color', '#BDAE82');
+  }else{
+    sunBtn.classList.remove('darck-icon');
+    sunBtn.classList.add('light-icon');
+    document.documentElement.style.setProperty('--body-color', '#fff');
+    document.documentElement.style.setProperty('--text-color', '#000');
+    document.documentElement.style.setProperty('--hover-color', '#000');
+  }
+}
+
+sunBtn.addEventListener("click", lightDarckStyle);
