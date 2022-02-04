@@ -1,0 +1,138 @@
+ /* Убираем внутренние отступы */
+ ul[class],
+ ol[class] {
+   padding: 0;
+ }
+ 
+ img {
+   max-width: 100%;
+   display: block;
+ }
+ 
+ div , span {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ 
+ /* Убираем внешние отступы */
+ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+   margin: 0;
+ }
+ 
+ html{
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+ 
+   }
+ 
+   *,*::before, *::after{
+     box-sizing: inherit;
+   }
+   
+ a{
+     text-decoration: none;
+ }
+ 
+ li{
+     list-style: none;
+   }
+
+  body{
+    background-color: #000;
+  }
+
+   .container{
+     max-width: 1920px;
+     width: 100%;
+    padding: 0 30px;
+     margin: 0 auto;
+   }
+
+   .nav{
+     height: 80px;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .logo{
+     width: 45px;
+     height: 45px;
+     background-image: url('./assets/svg/logo1.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+     transition: 0.3s;
+   }
+
+   .logo:hover{
+    filter:invert(40%) sepia(58%) saturate(587%) hue-rotate(16deg) brightness(72%)
+    contrast(87%);
+   }
+
+   .nav-list{
+     display: flex;
+     flex-direction: row;
+     margin-left: auto;
+   }
+
+   .nav-item{
+     font-size: 22px;
+     line-height: 26px;
+     margin-right: 20px;
+     color: #fff;
+     transition: 0.3s;
+   }
+
+   .nav-item:hover{
+     color: olive;
+   }
+   .bg-img{
+      background-image: url('./assets/img/drozd.jpg');
+     background-position: bottom;
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+
+   .main-container{
+     height: calc(100vh - 160px);
+     width: 100%;
+     
+   }
+
+   .footer-container{
+     width: 100%;
+     height: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .year,
+   .link-gh{
+    font-size: 22px;
+    line-height: 26px;
+    margin-right: 20px;
+    color: #fff;
+    transition: 0.3s;
+   }
+
+   .link-gh:hover{
+    color: olive;
+   }
+
+   .link-rss{
+     height: 40px;
+     width: 80px;
+     background-image: url('./assets/svg/rss.svg');
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+
+   .link-rss:hover{
+    filter:invert(40%) sepia(58%) saturate(587%) hue-rotate(16deg) brightness(72%)
+    contrast(87%);
+   }
+
