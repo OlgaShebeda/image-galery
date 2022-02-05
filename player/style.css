@@ -120,13 +120,38 @@
      
    }
 
+   .btn-next{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('./assets/svg/next-btn.svg');
+    background-repeat: no-repeat;
+    filter: contrast(0%) brightness(100) ;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+
+   .btn-prev{
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('./assets/svg/prev-btn.svg');
+    background-repeat: no-repeat;
+    filter: contrast(0%) brightness(100) ;
+    border: none;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+
    .btn-play{
       height: 66px;
       width: 66px;
       background-color: rgba(0,0,0,0.2);
       background-image: url('./assets/svg/play.svg');
       background-repeat: no-repeat;
-      
+      margin-right: 30px;
       border-radius: 50%;
       cursor: pointer;
       transition: 0.3s;
@@ -144,7 +169,9 @@
     transition: 0.3s;
    }
 
-   .btn-play:hover{
+   .btn-play:hover,
+   .btn-next:hover,
+   .btn-prev:hover{
     background-color: rgba(0,0,0,0.5);
     box-shadow: 0px 0px 10px rgba(255,255,100,1);
    }
