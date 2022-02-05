@@ -3,6 +3,7 @@ const birds = ["drozd", "forest", "javoronok", "slavka", "solovey", "zarynka"];
 const btn = document.querySelector('.btn-play');
 const navList = document.querySelectorAll(".nav-item");
 const bg = document.querySelector('.bg-img');
+const audio = document.querySelector("audio");
 
 function activeItem(){
     navList.forEach(item => {
@@ -16,20 +17,25 @@ function activeImg (n){
     bg.style.backgroundImage =str;
 }
 
-  let index = 0;
+function activeAudio (n){
+    audio.src = `./assets/audio/${birds[n]}.mp3`;
+}
   
   navList.forEach((item, indexList) => {
     item.addEventListener('click', () => {
-      index = indexList;
       activeItem();
-      activeImg(index);
+      activeImg(indexList);
+      activeAudio(indexList)
     })
   });
 
 btn.addEventListener("click", () => {
     if (btn.classList.contains('pause')){
         btn.classList.remove('pause');
+        audio.pause();
     }else{
         btn.classList.add('pause');
+        audio.currentTime = 0;
+        audio.play();
     }
 })
