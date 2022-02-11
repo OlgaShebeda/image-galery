@@ -1,0 +1,119 @@
+ /* Убираем внутренние отступы */
+ ul[class],
+ ol[class] {
+   padding: 0;
+ }
+ 
+ img {
+   max-width: 100%;
+   display: block;
+ }
+ 
+ div , span {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+ 
+ /* Убираем внешние отступы */
+ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+   margin: 0;
+ }
+ 
+ html{
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+ 
+   }
+ 
+   *,*::before, *::after{
+     box-sizing: inherit;
+   }
+   
+ a{
+     text-decoration: none;
+ }
+ 
+ li{
+     list-style: none;
+   }
+
+  body{
+    background-color: #000;
+  }
+
+   .container{
+     max-width: 1920px;
+     width: 100%;
+     padding: 0 20px;
+     margin: 0 auto;
+   }
+
+   .header{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     height: 60px;
+     width: 100%;
+   }
+
+   .logo{
+     width: 250px;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     color: #fff;
+     top: 0;
+     font-weight: normal;
+   }
+
+   .logo-img{
+     width: 40px;
+     height: 40px;
+     filter: invert(50%) sepia(79%) saturate(1453%) hue-rotate(2deg) brightness(105%) contrast(102%);
+   }
+
+   .search{
+     width: 220px;
+     height: 40px;
+     background-color: #fff;
+     border-radius: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 8px;
+   }
+
+   .search-input{
+    -webkit-appearance: none;
+     background-color: transparent;
+     color: #000;
+     width: auto;
+     height: 30px;
+     border: none;
+   }
+
+   .search-input:focus{
+     outline: none;
+   }
+
+   .search-input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+   }
+
+   .btn-search{
+     width: 33px;
+     height: 30px;
+     border: none;
+     background-image: url('./assets/svg/magnifying-glass-solid.svg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-color: #fff;
+     cursor: pointer;
+   }
+
