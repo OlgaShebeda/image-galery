@@ -1,4 +1,4 @@
-let url = "https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo"
+let url = "https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=4YmeE-WFDrkUQq5UIgogHf_7AVU2nE_xBmUy7klb8_E";
 const gal = document.querySelector('.gallery-container');
 const btn = document.querySelector('.btn-search');
 let searchInpyt = document.querySelector('.search-input');
@@ -20,7 +20,7 @@ function  searchBtn(){
   let word = searchInpyt.value;
   word = word.replace(" ", "");
   word = word.toLowerCase();
-  url = `https://api.unsplash.com/search/photos?query=${word}&per_page=30&orientation=landscape&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo`
+  url = `https://api.unsplash.com/search/photos?query=${word}&per_page=30&orientation=landscape&client_id=4YmeE-WFDrkUQq5UIgogHf_7AVU2nE_xBmUy7klb8_E`;
   console.log(url);
   getData();
 }
