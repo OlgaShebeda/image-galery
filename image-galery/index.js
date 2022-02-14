@@ -1,4 +1,4 @@
-let url = "https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=4YmeE-WFDrkUQq5UIgogHf_7AVU2nE_xBmUy7klb8_E";
+let url = "https://api.unsplash.com/search/photos?query=school&per_page=30&orientation=landscape&client_id=4YmeE-WFDrkUQq5UIgogHf_7AVU2nE_xBmUy7klb8_E";
 const gal = document.querySelector('.gallery-container');
 const btn = document.querySelector('.btn-search');
 let searchInpyt = document.querySelector('.search-input');
@@ -14,9 +14,10 @@ function addDiv(data){
   
 }
 
-btn.addEventListener("click", searchBtn);
+btn.addEventListener('click', searchBtn);
 
 function  searchBtn(){
+  gal.innerHTML = '';
   let word = searchInpyt.value;
   word = word.replace(" ", "");
   word = word.toLowerCase();
@@ -24,6 +25,13 @@ function  searchBtn(){
   console.log(url);
   getData();
 }
+
+window.addEventListener('keydown',(ev) =>{
+  if (ev.key === "Enter"){
+    searchBtn();
+  }
+  
+})
 
 function addImg(data, div, index){
   let img = document.createElement('img');
