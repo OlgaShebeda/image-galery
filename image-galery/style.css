@@ -68,6 +68,7 @@
      color: #fff;
      top: 0;
      font-weight: normal;
+     line-height: 30px;
      margin-top: 20px;
    }
 
@@ -136,12 +137,10 @@
 
    .gallery-item{
      width: 30%;
-
-     
      margin: 15px;
    }
 
-img{
+.gallery-card{
   height: 300px;
   margin-bottom: 20px;
   width: 100%;
