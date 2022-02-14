@@ -68,6 +68,7 @@
      color: #fff;
      top: 0;
      font-weight: normal;
+     margin-top: 20px;
    }
 
    .logo-img{
@@ -86,6 +87,7 @@
      justify-content: space-between;
      align-items: center;
      padding: 0px 8px;
+     margin-top: 20px;
    }
 
    .search-input{
@@ -101,10 +103,6 @@
      outline: none;
    }
 
-   .search-input::-webkit-search-cancel-button{
-    -webkit-appearance: none;
-   }
-
    .btn-search{
      width: 33px;
      height: 30px;
@@ -117,3 +115,34 @@
      cursor: pointer;
    }
 
+   .line{
+     height: 3px;
+     width: 100%;
+     border-color: #FF8C00;
+     background-color: #FF8C00;
+     margin-top: 30px;
+     margin-bottom: 50px;
+   }
+
+   .gallery-container{
+     width: auto;
+     min-height: 1400px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+
+   }
+
+   .gallery-item{
+     width: 30%;
+
+     
+     margin: 15px;
+   }
+
+img{
+  height: 300px;
+  margin-bottom: 20px;
+  width: 100%;
+}
