@@ -30,7 +30,6 @@ window.addEventListener('keydown',(ev) =>{
   if (ev.key === "Enter"){
     searchBtn();
   }
-  
 })
 
 function addImg(data, div, index){
