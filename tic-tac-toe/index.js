@@ -4,6 +4,7 @@ let result = '';
 const reset = document.querySelector('.btn');
 const content = document.querySelector('.content');
 const block = document.querySelector('.win-container');
+let str = '';
 
 const win = [
     [0, 1, 2],
@@ -39,7 +40,8 @@ function stepByStep (){
     
     if(index === 9 ){
       block.style.display = 'block';
-      content.innerHTML = "draw";
+      localStorage.setItem('winGame', "draw");
+      writeLocalStorage();
     } 
 }
 
@@ -47,16 +49,24 @@ function winCheck(ind){
     for (let i = 0; i < win.length; i++){
       if (area[win[i][0]].innerHTML === 'O' && area[win[i][1]].innerHTML === 'O' && area[win[i][2]].innerHTML === 'O'){
         block.style.display = 'block';
-        content.innerHTML = `won O in ${ind} step`;
-        console.log("0")
+        console.log("0");
+        str = `won O in ${ind} step`;
+        writeLocalStorage(str);
       }else{
         if (area[win[i][0]].innerHTML === 'X' && area[win[i][1]].innerHTML === 'X' && area[win[i][2]].innerHTML === 'X'){
           block.style.display = 'block';
-          content.innerHTML = `won X in ${ind} step`;
-          console.log("x")
+          console.log("x");
+          str = `won X in ${ind} step`;
+          writeLocalStorage(str);
         }
       }
     }
+}
+
+function writeLocalStorage (str){
+ localStorage.setItem('winGame', str);
+    content.innerHTML = localStorage.getItem('winGame');
+  
 }
 
 reset.addEventListener("click", function() {
